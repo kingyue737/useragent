@@ -1,6 +1,7 @@
 {
   "name": "useragent",
-  "version": "2.3.0",
+  "version": "2.4.0",
+  "packageManager": "pnpm@7.9.5",
   "description": "Fastest, most accurate & effecient user agent string parser, uses Browserscope's research for parsing",
   "author": "Arnout Kazemier",
   "main": "./index.js",
@@ -22,15 +23,14 @@
   ],
   "maintainers": [
     {
-      "name": "Arnout Kazemier",
-      "email": "info@3rd-Eden.com",
-      "web": "http://www.3rd-Eden.com"
+      "name": "Yue JIN",
+      "email": "yuejin13@fudan.edu.cn"
     }
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/3rd-Eden/useragent.git"
+    "url": "https://github.com/kingyue737/useragent.git"
   },
   "pre-commit": [
     "test",
