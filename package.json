@@ -32,14 +32,6 @@
     "type": "git",
     "url": "http://github.com/3rd-Eden/useragent.git"
   },
-  "devDependencies": {
-    "assume": "1.5.x",
-    "mocha": "5.0.x",
-    "pre-commit": "1.2.x",
-    "request": "^2.88.0",
-    "semver": "5.5.x",
-    "yamlparser": "0.0.x"
-  },
   "pre-commit": [
     "test",
     "update"
@@ -48,10 +40,20 @@
     "test": "mocha $(find test -name '*.test.js')",
     "qa": "mocha --ui exports $(find test -name '*.qa.js')",
     "update": "node ./bin/update.js",
+    "testfiles": "node ./bin/testfiles.js",
     "prepublish": "npm run update"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "lru-cache": "4.1.x",
-    "tmp": "0.0.x"
+    "semver": "5.5.x",
+    "tmp": "0.0.x",
+    "yamlparser": "0.0.x"
+  },
+  "devDependencies": {
+    "assume": "1.5.x",
+    "mocha": "5.0.x",
+    "pre-commit": "1.2.x"
   }
 }
+
